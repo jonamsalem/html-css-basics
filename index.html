@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Doctype is an element or tag. It specifies document type to the browser -->
+<!-- some are open and close elements and some are self closing. Doctype and image are self-closing. Head is open close -->
+<html lang="en">
+    <!-- Element is the building block of HTML document -->
+    <!-- lang is an attribute specifying the language. -->
+<head>
+    <!--  head contains all metadata: ex title
+            things we don't actually see -->
+    <meta charset="UTF-8">
+    <!-- useful for a different alphabet -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- specifies permission of use http methods -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- checks viewport size and specifies mobile design so it fits the monitor -->
+    <link rel="stylesheet" href="style.css">
+    <!-- tag that connects  files together and specifies the relationship -->
+    <title>HTML & CSS Basics</title>
+
+</head>   
+
+<body>
+  <!-- contains everything that display to viewport -->
+
+  <header id="header"><b>HTML and CSS Fundumentals</b> </header>
+
+  <nav id = "nav-bar">
+
+    <a href="" class="nav_link">About</a>
+    <a href="" class = "nav_link">Content</a>
+    <a href="" class="nav_link">Contact</a>
+
+
+    </nav>
+
+    <section>
+        <article class="articles">
+            <h1>Title</h1>
+            <p><Strong>This is my bolded paragraph </Strong></p>
+            <img src="https://images.unsplash.com/photo-1629755725339-efd38b8253bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1848&q=80" alt="french bulldog">
+        </article>
+    </section>
+    <div class="order-of-specificity" id="order-of-specificity">Order of Specificity </div>
+
+
+
+        <section class="parent-element">Parent Box
+            <article class="child">Box</article>
+        </section>
+
+</body>             
+
+</html>

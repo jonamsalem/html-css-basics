@@ -1,0 +1,83 @@
+/*
+CSS language that defines style and positioning of HTML elements. 
+Ruleset 
+
+selector- set of rules that apply for an element
+{declaration
+    property:value
+     or key:value
+}
+*/
+
+/* Box model 
+
+
+*/
+
+
+
+
+
+
+
+
+/* Element selector */
+body {background-color:#cacaca ;
+    font-family: 'Courier New', Courier, monospace;}
+
+
+/* ID selector and Class selector */
+
+#nav-bar {background-color: #006266;}
+
+.nav_link {color: #cacaca;}
+
+.nav_link:hover{color: red;}
+
+.nav_link:focus {color: blue;}
+
+/* Wildcard selector- changes properties of everything */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Compound selectors */
+body > section > article img {
+    width: 25em;
+    height: 25em;
+    object-fit: cover;}
+
+
+
+
+    /* Order of Specificity 
+    1. Important
+    2. in-line style
+    3. id selector
+    4. class
+    5. element */
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 10000px;
+    height: 100px;
+    background-color: yellow;}
+
+div{background-color: green !important;}
+
+.order-of-specificity{background-color: blue;}
+
+
+.parent-element {
+    width: 750 px;
+    height: 100px ;
+    border: 2px solid black;
+    margin: 1em;
+}
+
+.child {
+    border: 2px solid purple ;
+}
